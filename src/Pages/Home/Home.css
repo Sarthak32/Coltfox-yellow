@@ -1,0 +1,61 @@
+.main-container {
+    background-color: #F4DAC1;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .head {
+    font-family: 'Poppins', sans-serif;
+    color: #BA8F6F;
+    font-weight: 700;
+    font-size: 450px;
+    margin-bottom: -5rem; /* Adjusted the margin to be very small */
+
+}
+.head #bg1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 450px;
+  margin-bottom: -5rem; 
+  text-align: center;
+
+  overflow: hidden;
+}
+.head #elem{
+  display: inline-block;
+}
+
+.head #elem h1{
+  font-family: 'Poppins', sans-serif;
+  display: inline;
+  font-weight: 700;
+  font-size: 450px;
+  
+}
+
+  
+  .content {
+    margin-top: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    position: relative;
+    background: linear-gradient(180deg, #A78063 0%, #483F39 100%);
+    -webkit-background-clip: text; /* Apply the gradient to the text */
+    background-clip: text;
+    color: transparent; 
+}
+  
+  .animateimg img {
+    margin-top: 5rem;
+    max-width: 100%;
+    animation: bounce 2s infinite;
+    height: 60px;
+    width: 50px;
+  }
+  
+
+  

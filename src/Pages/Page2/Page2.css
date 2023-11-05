@@ -1,0 +1,67 @@
+.page2-container {
+  background-color: #F4DAC1;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden; /* Add overflow property to hide the graphs initially */
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 3rem;
+  background: linear-gradient(180deg, rgba(186, 143, 111, 1) 0%, rgba(138, 94, 62, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: 'Montserrat', sans-serif;
+  color: #A78063;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.graphs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.graph {
+  flex: 1;
+  display: flex;
+  margin-left: 3rem;
+  height: 600px;
+  width: 400px;
+  background: linear-gradient(rgba(254, 81, 81, 1), rgba(65, 0, 2, 1));
+  border-radius: 60px;
+ 
+  justify-content: center;
+  padding-top: 1.5rem;
+  transform: translateY(0); /* Initial position, not translated */
+  opacity: 0.3; /* Initial opacity is lower */
+  transition: transform 0.5s, opacity 0.5s; /* Add transition for smoother animation */
+}
+
+.graph-name {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  padding: 0;
+}
+
+/* Add hover effect to make graphs appear when hovered */
+.graph:hover {
+  transform: translateY(-20px); /* Translate graphs up on hover */
+  opacity: 0.8; /* Increase opacity on hover */
+}

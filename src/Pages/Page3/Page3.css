@@ -1,0 +1,91 @@
+.page3-container {
+  background-color: rgba(246, 59, 59, 1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.section-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 150.44px;
+  margin-top: 150px;
+  background: linear-gradient(180deg, rgba(255, 211, 178, 1) 0%, rgba(243, 212, 184, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.slider {
+  background: radial-gradient(circle, #F4DAC1 60%, transparent 70%);
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 20px;
+  transition: background 0.2s ease; /* Add a smooth background transition */
+}
+
+.slider:hover {
+  transform: scale(1.03); /* Change the background color on hover */
+}
+
+.page-graphs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(rgba(241, 208, 176, 1) 30%, rgba(177, 128, 96, 1) 100%);
+  color: #ffffff;
+  margin: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.grph-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  display: flex; /* Display the title and arrow icon in a row */
+  align-items: center; /* Center align the title and arrow icon */
+  justify-content: center; /* Center horizontally */
+}
+
+.arrow {
+  width: 30px;
+  margin-right: 10px;
+  transform: translateY(4px); /* Adjust the vertical alignment of the arrow icon */
+}
+
+.desc {
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+}
+
+.desc h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.page-graph:hover {
+  transform: translateY(-5px); /* Lift the container slightly on hover */
+  transition: transform 0.2s ease;
+}
+
