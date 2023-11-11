@@ -1,4 +1,7 @@
-# React + Vite
+# Video Preview :
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+https://github.com/Sarthak32/Portfolio_template/assets/92269596/59e49187-5ab5-4dc1-9063-41d448de10a6
+
+
 
