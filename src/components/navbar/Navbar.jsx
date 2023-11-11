@@ -15,7 +15,7 @@ const Navbar = () => {
         <img src="./logo.png" alt="Company Logo" />
       </div>
       <div className="menu-icon">
-        <motion.img src="./menu1.png" alt="Menu Icon" 
+        <motion.img src="./menu.png" alt="Menu Icon" 
         onClick={handleClick}
         initial={{ scale: 0 }}
         animate={{ rotate: isMenuOpen ? -90 : 0, scale: 1 }}

@@ -3,19 +3,18 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #F4DAC1; /* Replace with your desired background color */
+    background-color: black; /* Replace with your desired background color */
   }
   
   .logo img {
-    width: 130.34px; /* Adjust the logo size as needed */
-    height: 100.61px;
+    width: 150px; /* Adjust the logo size as needed */
+    height: 64px;
     background: transparent;
   }
   
   .menu-icon img {
-    width: 39px; /* Adjust the menu icon size as needed */
+    width: 32px; /* Adjust the menu icon size as needed */
     cursor: pointer;
 
-    height: 45.55px;
-    border-radius: 7px;
+    height: 40.55px;
   }

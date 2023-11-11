@@ -1,49 +1,102 @@
 .page4-container {
-  background-color: #F4DAC1;
+  background-color: rgba(246, 59, 59, 1);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0;
-  position: relative; /* Set the position to relative */
+  padding: 20px;
 }
-  .stable {
-    font-family: 'Poppins', sans-serif;
-    color: rgba(186, 143, 111, 1);
-    font-weight: 700;
-    font-size: 200px;
-    margin-bottom: 20px;
-  }
 
-  .stacks {
-    top: 0;
-    position: relative; /* Set the position to relative for absolute child positioning */
-    width: 100%; /* Set the width to 100% of the container */
-    height: 100%; /* Set the height to 100% of the container */
-    
-  }
-  .floating-stack {
-    
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    background: linear-gradient(180deg, rgba(254, 81, 81, 1), rgba(132, 38, 40, 1));
-    opacity: 0.7;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: float 6s ease-in-out infinite;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1rem;
-    color: #fff;
-    font-size: 50px;
-  }
-  
+.title-page4 {
+width: 1252px;
+height: 218px;
+left: calc(50% - 1252px/2);
+top: 260px;
+font-family: 'Poppins', sans-serif;
+font-weight: 700;
+font-size: 200px;
+line-height: 109%;
+text-align: center;
 
-  
+background: linear-gradient(180deg, rgba(255, 211, 178, 0.4) 0%, rgba(243, 212, 184, 0.4) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
 
+
+}
+
+.page4-content{
+  display: flex;
+  flex-direction: row; /* Change to row to align title and subtitle horizontally */
+  align-items: center;
+  text-align: center;
+}
+
+.page4-container .subtitle{
   
+width: 674px;
+height: 269px;
+left: calc(50% - 674px/2 - 467px);
+top: 452px;
+
+font-family: 'Poppins', sans-serif;
+
+font-weight: 700;
+font-size: 100px;
+line-height: 150px;
+text-align: center;
+
+color: #FCF8F6;
+}
+
+
+
+.desc-page4 {
+  font-family: 'Poppins', sans-serif;
+  color: rgba(252, 248, 246, 1);
+  font-weight: 700;
+  font-size: 24px; /* Adjusted font size */
+  margin-bottom: 20px;
+}
+
+.desc1-page4 {
+width: 766px;
+height: 216px;
+left: 762px;
+top: 416px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.02em;
+text-transform: lowercase;
+
+color: #FFFFFF;
+
+
+}
+
+.desc2-page4{
+/* Our full-funnel approach is a comprehensive strategy to help you reach your marketing goals. We use a variety of tactics and tools to drive customer engagement throughout the customer journey. */
+width: 766px;
+height: 144px;
+left: 762px;
+top: 643px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.02em;
+text-transform: lowercase;
+
+color: #FFFFFF;
+
+
+}

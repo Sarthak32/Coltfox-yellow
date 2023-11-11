@@ -1,6 +1,6 @@
 .main-container {
-    background-color: #F4DAC1;
-    min-height: 85vh;
+    background-color: black;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,9 +52,8 @@
   .animateimg img {
     margin-top: 5rem;
     max-width: 100%;
-    animation: bounce 2s infinite;
-    height: 60px;
-    width: 50px;
+    height: 69px;
+    width: 40px;
   }
   
 

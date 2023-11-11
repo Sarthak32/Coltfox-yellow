@@ -41,7 +41,7 @@
   margin-left: 3rem;
   height: 600px;
   width: 400px;
-  background: linear-gradient(rgba(254, 81, 81, 1), rgba(65, 0, 2, 1));
+  background: linear-gradient(rgba(254, 81, 81, 1) 0%,rgba(65, 0, 2, 1) 100%);
   border-radius: 60px;
  
   justify-content: center;
@@ -55,7 +55,7 @@
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 60px;
-  color: rgba(255, 255, 255, 1);
+  color:  rgba(242, 41, 41, 1);
   font-weight: bold;
   padding: 0;
 }

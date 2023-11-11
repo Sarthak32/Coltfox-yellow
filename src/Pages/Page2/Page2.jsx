@@ -33,7 +33,7 @@ const Page2 = () => {
     <div className="page2-container">
       <div className="title">Innovation at <br />your fingertips</div>
       <div className="description">
-        Hudbil is a global creative agency. We use design, animation, and technology to tell <br />transformational stories for the world's leading organizations.
+Hudbil is a global creative Agency. We use design, animation, and technology to tell <br /> transformational stories for the world’s leading organizations.
       </div>
 
       <div className="graphs">
@@ -44,8 +44,8 @@ const Page2 = () => {
           animate={{ opacity: 0.4,  height: '600px' }}
           whileHover={{ y: -10, scale: 1.1 }}
         >
-          <FontAwesomeIcon icon={faArrowLeft} style={{ color: '#ffffff', transform: 'rotate(135deg)', height: '60px' }} />
-          <div className="graph-name">Discover</div>
+          <FontAwesomeIcon icon={faArrowLeft} style={{ color: 'rgba(242, 41, 41, 1)', transform: 'rotate(135deg)', height: '60px' }} />
+          <div className="graph-name">Strategy</div>
         </motion.div>
 
         <motion.div
@@ -55,7 +55,7 @@ const Page2 = () => {
           animate={{ opacity: 0.4,   height: '600px' }}
           whileHover={{ y: -10, scale: 1.1 }}
         >
-          <FontAwesomeIcon icon={faArrowLeft} style={{ color: '#ffffff', transform: 'rotate(45deg)', height: '60px' }} />
+          <FontAwesomeIcon icon={faArrowLeft} style={{ color: 'rgba(242, 41, 41, 1)', transform: 'rotate(45deg)', height: '60px' }} />
           <div className="graph-name">Design</div>
         </motion.div>
 
@@ -66,7 +66,7 @@ const Page2 = () => {
           animate={{ opacity: 0.4,  height: '600px' }}
           whileHover={{ y: -10, scale: 1.1 }}
         >
-          <FontAwesomeIcon icon={faArrowLeft} style={{ color: '#ffffff', transform: 'rotate(-45deg)', height: '60px' }} />
+          <FontAwesomeIcon icon={faArrowLeft} style={{ color: 'rgba(242, 41, 41, 1)', transform: 'rotate(-45deg)', height: '60px' }} />
           <div className="graph-name">Build</div>
         </motion.div>
       </div>

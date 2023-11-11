@@ -65,7 +65,7 @@ const Home = () => {
       <motion.div className='content' 
       initial={{ y: 20, opacity: 0.2 }}
       animate={isAnimating ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}>
-        We are a creative development agency.
+        We ARE A creative Marketing agency.
         </motion.div>
       <div className='animateimg'>
         <motion.img
