@@ -1,74 +1,63 @@
-import React, { useEffect, useState } from 'react';
-import './Page2.css';
+import React, { useEffect, useRef } from 'react';
+import "./Page2.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { motion, useTransform, useScroll } from 'framer-motion';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Page2 = () => {
-  const { scrollY } = useScroll();
-  const [translateY, setTranslateY] = useState(0);
-  const [opacity, setOpacity] = useState(0.3);
-  const [height, setHeight] = useState(0);
+  const graphRefs = useRef([]);
 
   useEffect(() => {
-    const updateValues = () => {
-      const scrollValue = scrollY.get();
-      const translateValue = -15 * (scrollValue / 160);
-      setTranslateY(translateValue);
-  setTranslateY(translateValue);
-  setOpacity(0.4 + scrollValue / 120);
-    };
+    graphRefs.current.forEach((graph, index) => {
+      gsap.from(graph, {
+        y: '90%',
+        opacity: 0.6,
+        scrollTrigger: {
+          trigger: graph,
+          start: 'top bottom-=400',
+          end: 'top top',
+          scrub: true,
+        },
+      });
 
-    // Attach scroll event listener to update values continuously
-    window.addEventListener('scroll', updateValues);
-    
+      const speed = parseFloat(graph.getAttribute("data-speed")) || 1;
 
-    return () => {
-      // Remove the event listener when the component unmounts
-      window.removeEventListener('scroll', updateValues);
-    };
-  }, [scrollY]);
+      gsap.to(graph, {
+        scrollTrigger: {
+          trigger: graph,
+          start: 'top bottom-=100',
+          end: 'top top',
+          scrub: 1,
+        },
+        y: -20 * speed,
+        zIndex: index,
+      });
+    });
+  }, []);
 
   return (
     <div className="page2-container">
       <div className="title">Innovation at <br />your fingertips</div>
       <div className="description">
-Hudbil is a global creative Agency. We use design, animation, and technology to tell <br /> transformational stories for the world’s leading organizations.
+        Hudbil is a global creative Agency. We use design, animation, and technology to tell <br /> transformational stories for the world’s leading organizations.
       </div>
 
       <div className="graphs">
-        <motion.div
-          className="graph"
-          style={{ y: translateY, opacity: opacity ,height:`${height}px`}}
-          initial={{ opacity: 0.1, y: 0, height: '0' }}
-          animate={{ opacity: 0.4,  height: '600px' }}
-          whileHover={{ y: -10, scale: 1.1 }}
-        >
+        <div className="graph" ref={(el) => (graphRefs.current[0] = el)} data-speed="5.2">
           <FontAwesomeIcon icon={faArrowLeft} style={{ color: 'rgba(242, 41, 41, 1)', transform: 'rotate(135deg)', height: '60px' }} />
           <div className="graph-name">Strategy</div>
-        </motion.div>
-
-        <motion.div
-          className="graph"
-          style={{ y: translateY, opacity: `${opacity}` ,height:`${height}px`}}
-          initial={{ opacity: 0.1, y: 0, height: '0' }}
-          animate={{ opacity: 0.4,   height: '600px' }}
-          whileHover={{ y: -10, scale: 1.1 }}
-        >
+        </div>
+        <div className="graph" ref={(el) => (graphRefs.current[1] = el)} data-speed="0.6">
           <FontAwesomeIcon icon={faArrowLeft} style={{ color: 'rgba(242, 41, 41, 1)', transform: 'rotate(45deg)', height: '60px' }} />
-          <div className="graph-name">Design</div>
-        </motion.div>
-
-        <motion.div
-          className="graph"
-          style={{ y: translateY, opacity: opacity ,height:`${height}px`}}
-          initial={{ opacity: 0.1, y: 0, height: '0' }}
-          animate={{ opacity: 0.4,  height: '600px' }}
-          whileHover={{ y: -10, scale: 1.1 }}
-        >
-          <FontAwesomeIcon icon={faArrowLeft} style={{ color: 'rgba(242, 41, 41, 1)', transform: 'rotate(-45deg)', height: '60px' }} />
           <div className="graph-name">Build</div>
-        </motion.div>
+        </div>
+        <div className="graph" ref={(el) => (graphRefs.current[2] = el)} data-speed="3.4">
+          <FontAwesomeIcon icon={faArrowLeft} style={{ color: 'rgba(242, 41, 41, 1)', transform: 'rotate(-45deg)', height: '60px' }} />
+          <div className="graph-name">Design</div>
+        </div>
       </div>
     </div>
   );

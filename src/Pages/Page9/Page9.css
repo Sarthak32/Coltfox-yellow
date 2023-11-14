@@ -1,0 +1,93 @@
+.page9-container {
+    background-color: rgba(246, 59, 59, 1);
+    min-height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title-page9 {
+    margin-top: 2rem;
+    width: 1252px;
+    height: 218px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 109%;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 211, 178, 0.4) 0%, rgba(243, 212, 184, 0.4) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  .page9-content {
+    position: relative; /* Make the parent container relative for absolute positioning */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px; /* Adjust the gap as needed */
+    overflow-x: hidden;
+  }
+  
+  .page9-slider {
+    position: absolute;
+    top: 50%; /* Place the slider button at the middle of the parent container */
+    left: 73%; /* Center the slider button horizontally */
+    background: radial-gradient(circle, black 60%, transparent 70%);
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 20px;
+    transition: background 0.2s ease; /* Add a smooth background transition */
+  }
+  
+  .page9-slider:hover {
+    transform: scale(1.03); /* Change the background color on hover */
+  }
+  
+  .page9-cont1,
+  .page9-cont3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px; /* Adjust as needed */
+    height: 600px;
+    width: 400px;
+    border-radius: 60px;
+    
+  }
+  
+  .page9-cont2,
+  .page9-cont4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 90px; /* Adjust as needed */
+    height: 400px;
+    width: 300px;
+    border-radius: 60px;
+  
+  }
+  
+  .page9-cont-name {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(77, 52, 52, 1) 0%, rgba(0, 0, 0, 0.69) 100%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 0 15px 0 0;
+  }
+  

@@ -6,44 +6,41 @@ import { motion, useAnimation,useScroll } from 'framer-motion';
 
 const Page3 = () => {
   const controls = useAnimation();
-  const { scrollY } = useScroll();
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const updateScrollPosition = () => {
-      setScrollPosition(scrollY.get());
-    };
-
-    const startAnimation = async () => {
-      if (scrollPosition > 100) {
-        await controls.start('visible');
-      } else {
-        await controls.start('hidden');
+  const elementRef = useRef(null);
+  const [arrowDisable, setArrowDisable] = useState(true);
+  const handleHorizantalScroll = (element, speed, distance, step) => {
+    let scrollAmount = 0;
+    const slideTimer = setInterval(() => {
+      element.scrollLeft += step;
+      scrollAmount += Math.abs(step);
+      if (scrollAmount >= distance) {
+        clearInterval(slideTimer);
       }
-    };
+      if (element.scrollLeft === 0) {
+        setArrowDisable(true);
+      } else {
+        setArrowDisable(false);
+      }
+    }, speed);
+  };
 
-    updateScrollPosition();
-    startAnimation();
 
-    const unsubscribe = scrollY.onChange(updateScrollPosition);
-
-    return () => {
-      unsubscribe();
-    };
-  }, [scrollY, scrollPosition, controls]);
+  
 
 
   return (
     <div className='page3-container'>
       <div className='section-heading'>what we do</div>
-      <button className="slider" >
+      <button className="slider" onClick={() => {
+            handleHorizantalScroll(elementRef.current, 25, 100, 10);
+          }}>
           <FontAwesomeIcon icon={faArrowRight} style={{ color: "#f32525", fontSize: "2rem" }} />
         </button>
 
       <div className='page-graphs'>
       <motion.div className="page-graph"
-          initial="hidden"
-          animate={controls}
+          
+          //animate={}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
@@ -62,8 +59,8 @@ const Page3 = () => {
             </div>
         </motion.div>
 
-        <motion.div className="page-graph"  initial="hidden"
-          animate={controls}
+        <motion.div className="page-graph"  
+          //animate={controls}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
@@ -83,8 +80,8 @@ const Page3 = () => {
         
         </motion.div>
 
-        <motion.div className="page-graph"  initial="hidden"
-          animate={controls}
+        <motion.div className="page-graph"  
+         // animate={controls}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
@@ -103,8 +100,8 @@ const Page3 = () => {
           </div>
         </motion.div>
 
-        <motion.div className="page-graph" initial="hidden"
-          animate={controls}
+        <motion.div className="page-graph" 
+         // animate={controls}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },

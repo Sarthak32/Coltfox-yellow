@@ -21,50 +21,51 @@ const Home = () => {
       <div className='head'>
         <div id='bg1'>
           <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={isAnimating ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+            initial={{ y: 300, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 } }
             id='elem'
-            transition={{ type: 'spring', damping: 5, stiffness: 100, delay: 0.3 }}
+            transition={{ duration: 1.5,stiffness: 100, delay: 0.3,timeConstant:1.5 }}
           >
             <h1>h</h1>
           </motion.div>
           <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={isAnimating ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+            initial={{ y: 300, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 } }
             id='elem'
-            transition={{ type: 'spring', damping: 5, stiffness: 100, delay: 0.6 }}
+            transition={{ duration: 1.5, stiffness: 100, delay: 0.42 ,timeConstant:1.5}}
           >
             <h1>e</h1>
           </motion.div>
           <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={isAnimating ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+            initial={{y: 300, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 } }
             id='elem'
-            transition={{ type: 'spring', damping: 5, stiffness: 100, delay: 0.9 }}
+            transition={{  duration: 1.5,stiffness: 100, delay: 0.54,timeConstant:1.5 }}
           >
             <h1>l</h1>
           </motion.div>
           <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={isAnimating ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+            initial={{ y: 300, opacity: 0 }}
+            animate={ { y: 0, opacity: 1 }}
             id='elem'
-            transition={{ type: 'spring', damping: 5, stiffness: 100, delay: 1.2 }}
+            transition={{ duration: 1.5,stiffness: 100, delay: 0.66 ,timeConstant:1.5}}
           >
             <h1>l</h1>
           </motion.div>
           <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={isAnimating ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+            initial={{ y: 300, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 } }
             id='elem'
-            transition={{ type: 'spring', damping: 5, stiffness: 100, delay: 1.5 }}
+            transition={{ duration: 1.5, stiffness: 100, delay: 0.78,timeConstant:1.5 }}
           >
             <h1>o</h1>
           </motion.div>
         </div>
       </div>
       <motion.div className='content' 
-      initial={{ y: 20, opacity: 0.2 }}
-      animate={isAnimating ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}>
+      initial={{ y: 20, opacity: 0.05 }}
+      animate={ { y: 0, opacity: 1 }}
+      transition={{duration:0.7,delay:1.6}}>
         We ARE A creative Marketing agency.
         </motion.div>
       <div className='animateimg'>

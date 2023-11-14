@@ -1,0 +1,130 @@
+.page7-container {
+    background-color: rgba(246, 59, 59, 1);
+    min-height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title-page7 {
+    margin-top: 2rem;
+    width: 1252px;
+    height: 218px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 109%;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 211, 178, 0.4) 0%, rgba(243, 212, 184, 0.4) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  .page7-content{
+    display: flex;
+    flex-direction: row; /* Change to row to align title and subtitle horizontally */
+    align-items: center;
+    
+  }
+  
+.subtitle-page7{
+    width: 502px;
+    height: 269px;
+    left: 70px;
+    top: 452px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    color: #FCF8F6;
+}
+.clients{
+  width: auto;
+  height:420px;
+  left: 612px;
+  display: flex;
+  overflow-x: scroll;
+  margin: 0 auto;
+  gap: 5px;
+  align-content: center;
+}
+
+::-webkit-scrollbar {
+
+  height: 5px;
+  width: 5px;
+  background: #fff3;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff3;
+}
+.client1,.client2,.client3,.client4,.client5{
+  flex: 0 0 420px;
+  background: rgba(23, 21, 28, 1);
+  margin: 0 20px 0 0;
+}
+
+li:last-of-type {
+  margin: 0;
+} 
+.img1{
+  margin-top: 130px;
+}
+.client1  .img1 img ,
+.client2  .img1 img,
+.client3  .img1 img,
+.client4  .img1 img,
+.client5  .img1 img{
+  /* Center the img1 horizontally and vertically */
+  display: block;
+  margin: auto;
+  height: 140px;
+  width: 140px;
+}
+
+.client-det{
+  margin-top: 112px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align details to the top right */
+  align-content: center;
+  position: relative;
+
+}
+.client-det  img {
+  margin-left: 5px;
+  height: 30px;
+  width: 130px;
+  
+
+}
+.client-det .client-arrbtn {
+   /* Center the slider button horizontally */
+   position: absolute;
+  background: radial-gradient(circle, #f32525 60%, transparent 70%);
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s ease; /* Add a smooth background transition */
+}
+
+.client-det .client-arrbtn:hover {
+  transform: scale(1.03); /* Change the background color on hover */
+}
