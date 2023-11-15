@@ -6,11 +6,13 @@
     align-items: center;
     text-align: center;
     padding: 20px;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="rgba(255, 211, 178, 1)"><circle cx="20" cy="20" r="18"  fill="rgba(255, 211, 178, 1)"/></svg>'), auto;
+
   }
   
   .title-page9 {
     margin-top: 2rem;
-    width: 1252px;
+    width: auto;
     height: 218px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -27,13 +29,11 @@
   .page9-content {
     position: relative; /* Make the parent container relative for absolute positioning */
     display: flex;
-    justify-content: space-evenly;
-    gap: 30px; /* Adjust the gap as needed */
-    overflow-x: hidden;
+    overflow: hidden;
+    width: 100%;
   }
   
   .page9-slider {
-    position: absolute;
     top: 50%; /* Place the slider button at the middle of the parent container */
     left: 73%; /* Center the slider button horizontally */
     background: radial-gradient(circle, black 60%, transparent 70%);
@@ -54,27 +54,28 @@
   }
   
   .page9-cont1,
-  .page9-cont3 {
+  .page9-cont3,.page9-cont5,.page9-cont7 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 50px; /* Adjust as needed */
     height: 600px;
-    width: 400px;
+    flex: 0 0 700px;
     border-radius: 60px;
-    
+    margin-right: 5px;
+    margin-left: 5px;
   }
   
   .page9-cont2,
-  .page9-cont4 {
+  .page9-cont4,.page9-cont6 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 90px; /* Adjust as needed */
     height: 400px;
-    width: 300px;
+    flex: 0 0 600px;
     border-radius: 60px;
-  
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 200px;
   }
   
   .page9-cont-name {

@@ -66,22 +66,24 @@ const Home = () => {
       initial={{ y: 20, opacity: 0.05 }}
       animate={ { y: 0, opacity: 1 }}
       transition={{duration:0.7,delay:1.6}}>
-        We ARE A creative Marketing agency.
+        WE ARE A CREATIVE MARKETING AGENCY.
         </motion.div>
-      <div className='animateimg'>
-        <motion.img
-          src='./anm.png'
-          alt='Animated Image'
-          initial={{ y: 0 }}
-          animate={{ y: isAnimating ? 10 : -10 }}
-          transition={{
-            type: 'spring',
-            damping: 2,
-            stiffness: 50,
-            duration: 0.5,
-          }}
-        />
-      </div>
+        
+      <footer className="icon-scroll opacity-50">
+  <div className="icon-scroll--active" />
+  <div className='icon-scroll__dot' />
+  <div className='icon-scroll__lines--right'>
+    <div className='icon-scroll_lines_1' />
+    <div className='icon-scroll_lines_2' />
+    <div className='icon-scroll_lines_3' />
+  </div>
+  <div className='icon-scroll__lines--left'>
+    <div className='icon-scroll_lines_1' />
+    <div className='icon-scroll_lines_2' />
+    <div className='icon-scroll_lines_3' />
+  </div>
+</footer>
+
     </div>
   );
 };

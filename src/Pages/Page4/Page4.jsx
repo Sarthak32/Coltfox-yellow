@@ -9,8 +9,10 @@ const Page4 = () => {
       <div className="subtitle">
         We Scale <br /> Your Sales</div>
         <div className='desc-page4'>
-          <div className='desc1-page4'>HUDBIL full-service marketing agency is dedicated to helping businesses reach their goals. We offer a comprehensive range of services to meet all of your marketing needs. From creating and executing campaigns, to optimizing your website, to providing effective lead generation, we have the expertise and experience to deliver results.</div>
-          <div className='desc2-page4'>Our full-funnel approach is a comprehensive strategy to help you reach your marketing goals. We use a variety of tactics and tools to drive customer engagement throughout the customer journey.</div>
+          <div className='desc1-page4'>Touching Dots Between SEO, Content & Digital PR.
+Serious about increasing your brand's organic visibility? Want to own the results that rank at the top of the search engines when your potential clients or customers are searching? Want to be the brand whose experts the media turns to when writing articles about your industry?
+That's exactly what we're here to help you achieve, taking a joined up approach to driving success through. </div>
+          
         </div>
         </div>
       

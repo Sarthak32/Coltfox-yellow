@@ -6,6 +6,8 @@
   align-items: center;
   text-align: center;
   padding: 20px;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="rgba(255, 211, 178, 1)"><circle cx="20" cy="20" r="18"  fill="rgba(255, 211, 178, 1)"/></svg>'), auto;
+
 }
 
 .title-page4 {
@@ -63,40 +65,15 @@ color: #FCF8F6;
 }
 
 .desc1-page4 {
-width: 766px;
-height: 216px;
-left: 762px;
-top: 416px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.02em;
-text-transform: lowercase;
-
-color: #FFFFFF;
-
-
-}
-
-.desc2-page4{
-/* Our full-funnel approach is a comprehensive strategy to help you reach your marketing goals. We use a variety of tactics and tools to drive customer engagement throughout the customer journey. */
-width: 766px;
-height: 144px;
-left: 762px;
-top: 643px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.02em;
-text-transform: lowercase;
-
-color: #FFFFFF;
-
-
+  width: 766px;
+  height: 216px;
+  left: 762px;
+  top: 416px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
 }

@@ -18,8 +18,8 @@ const App = () => {
           <Navbar/>
           <Home/>
           <Page2/>
-          <Page3/>
           <Page4/>
+          <Page3/>
           <Page5/>
           <Page6/>
           <Page7/>
