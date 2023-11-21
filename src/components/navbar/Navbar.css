@@ -2,21 +2,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: black; /* Replace with your desired background color */
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="rgba(226, 85, 79, 1)"><circle cx="20" cy="20" r="18"  fill="rgba(226, 85, 79, 1)"/></svg>'), auto;
-
+    background-color: #F2F2F2; 
+    padding: 42px 136px  0 136px;
   }
-  
+  .logo{
+    left: 136px;
+    background: #D9D3D3;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .logo img {
-    width: 150px; /* Adjust the logo size as needed */
-    height: 64px;
-    background: transparent;
+    width: 53.88px; 
+    height: 76px;
   }
-  
-  .menu-icon img {
-    width: 32px; /* Adjust the menu icon size as needed */
-    cursor: pointer;
+  .menu-icon {
+    background: #D9D3D3;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    height: 40.55px;
+  }
+  .menu-icon img {
+    width: 29px; 
+    height: 36px;
+    cursor: pointer;
   }

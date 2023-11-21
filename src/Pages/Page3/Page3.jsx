@@ -5,178 +5,31 @@ import { faArrowRight,faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { motion, useAnimation,useScroll } from 'framer-motion';
 
 const Page3 = () => {
-  const controls = useAnimation();
-  const elementRef = useRef(null);
-  const [arrowDisable, setArrowDisable] = useState(true);
-  const handleHorizantalScroll = (element, speed, distance, step) => {
-    let scrollAmount = 0;
-    const slideTimer = setInterval(() => {
-      element.scrollLeft += step;
-      scrollAmount += Math.abs(step);
-      if (scrollAmount >= distance) {
-        clearInterval(slideTimer);
-      }
-      if (element.scrollLeft === 0) {
-        setArrowDisable(true);
-      } else {
-        setArrowDisable(false);
-      }
-    }, speed);
-  };
-
-
   
+
+
 
 
   return (
     <div className='page3-container'>
-      <div className='section-heading'>what we do</div>
-      <button className="slider" onClick={() => {
-            handleHorizantalScroll(elementRef.current, 25, 100, 10);
-          }}>
-          <FontAwesomeIcon icon={faArrowRight} style={{ color: "#f32525", fontSize: "2rem" }} />
-        </button>
+      <div className='section-heading'>Our values define our culture and drive what we do.</div>
+      <div className="page3-right">
+        <div className="aboutus">About Us</div>
+        <div className="stable-des">Coltfox is not your typical digital marketing agency. We’re a strategic marketing firm that partners with clients to move their business forward. We’re bold. We’re curious. We’re transparent.</div>
+        <div className="movable-des">
+          <div className="movable1">Our tenacious team of proven digital marketing experts and business growth pros push the boundaries of what is possible. GIANT harnesses the power of data analytics to understand customer behaviours and preferences.</div>
 
-      <div className='page-graphs' ref={elementRef}>
-        <motion.div className="page-graph"
-          
-          //animate={}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}  >
-       
-          <div className='grph-name'> <FontAwesomeIcon  className="arrow" icon={faArrowLeft}  style={{color: "#ffffff",transform: "rotate(135deg)",height:"60px"}} />Design</div>
-          <div className="desc">
-            <h1>01. Design</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sed lorem quam fringilla eleifend semper vulputate aliquam. Eu dignissim cursus risus tempus. Feugiat morbi non vitae eget auctor. Et.
-            </p>
-          </div>
-          <div className="desc2">
-            <h1>02. Design</h1>
-            <p> Lorem ipsum dolor sit amet consectetur.Sed lorem quam fringilla eleifend semper vulputate aliquam.</p>
-            </div>
-        </motion.div>
+        </div>
 
-        <motion.div className="page-graph"  
-          //animate={controls}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}>
-       
-          <div className='grph-name'> <FontAwesomeIcon  className="arrow" icon={faArrowLeft}  style={{color: "#ffffff",transform: "rotate(45deg)",height:"60px"}} />Frontend</div>
-          <div className="desc">
-            <h1>01. Design</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sed lorem quam fringilla eleifend semper vulputate aliquam. Eu dignissim cursus risus tempus. Feugiat morbi non vitae eget auctor. Et.
-            </p>
-          </div>
-          <div className="desc2">
-            <h1>02. Design</h1>
-            <p> Lorem ipsum dolor sit amet consectetur. Sed lorem quam fringilla eleifend semper vulputate aliquam. Eu dignissim cursus risus tempus. Feugiat morbi non vitae eget auctor. Et.</p>
-          </div>
-        
-        </motion.div>
+        <div className="findmore-btn">Find out more<img src='./arr-w.png'/></div>
 
-        <motion.div className="page-graph"  
-         // animate={controls}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}>
-        
-          <div className='grph-name'><FontAwesomeIcon className="arrow" icon={faArrowLeft}  style={{color: "#ffffff",transform: "rotate(-45deg)",height:"60px"}} />Backend</div>
-          <div className="desc">
-            <h1>01. Design</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sed lorem quam fringilla eleifend semper vulputate aliquam. Eu dignissim cursus risus tempus. Feugiat morbi non vitae eget auctor. Et.
-            </p>
-          </div>
-          <div className="desc2">
-            <h1>02. Design</h1>
-            <p> Lorem ipsum dolor sit amet consectetur. Sed lorem quam fringilla eleifend semper vulputate aliquam. Eu dignissim cursus risus tempus.</p>
-          </div>
-        </motion.div>
 
-        <motion.div className="page-graph" 
-         // animate={controls}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}>
-       
-          <div className='grph-name'> <FontAwesomeIcon className="arrow" icon={faArrowLeft}  style={{color: "#ffffff",transform: "rotate(-135deg)",height:"60px"}} />More</div>
-          <div className="desc">
-            <h1>04. More</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sed lorem quam fringilla eleifend semper vulputate aliquam. Eu dignissim cursus risus tempus. Feugiat morbi non vitae eget auctor. Et.
-            </p>
-          </div>
-        </motion.div>
-        <motion.div className="page-graph"  
-          //animate={controls}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}>
-       
-          <div className='grph-name'> <FontAwesomeIcon  className="arrow" icon={faArrowLeft}  style={{color: "#ffffff",transform: "rotate(45deg)",height:"60px"}} />Frontend</div>
-          <div className="desc">
-            <h1>01. Design</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sed lorem quam fringilla eleifend semper vulputate aliquam. Eu dignissim cursus risus tempus. Feugiat morbi non vitae eget auctor. Et.
-            </p>
-          </div>
-          <div className="desc2">
-            <h1>02. Design</h1>
-            <p> Lorem ipsum dolor sit amet consectetur. Sed lorem quam fringilla eleifend semper vulputate aliquam. Eu dignissim cursus risus tempus. Feugiat morbi non vitae eget auctor. Et.</p>
-          </div>
-        
-        </motion.div>
-        <motion.div className="page-graph"  
-          //animate={controls}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}>
-       
-          <div className='grph-name'> <FontAwesomeIcon  className="arrow" icon={faArrowLeft}  style={{color: "#ffffff",transform: "rotate(45deg)",height:"60px"}} />Frontend</div>
-          <div className="desc">
-            <h1>01. Design</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sed lorem quam fringilla eleifend semper vulputate aliquam. Eu dignissim cursus risus tempus. Feugiat morbi non vitae eget auctor. Et.
-            </p>
-          </div>
-          <div className="desc2">
-            <h1>02. Design</h1>
-            <p> Lorem ipsum dolor sit amet consectetur. Sed lorem quam fringilla eleifend semper vulputate aliquam. Eu dignissim cursus risus tempus. Feugiat morbi non vitae eget auctor. Et.</p>
-          </div>
-        
-        </motion.div>
-        <motion.div className="page-graph"  
-          //animate={controls}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}>
-       
-          <div className='grph-name'> <FontAwesomeIcon  className="arrow" icon={faArrowLeft}  style={{color: "#ffffff",transform: "rotate(45deg)",height:"60px"}} />Frontend</div>
-          <div className="desc">
-            <h1>01. Design</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sed lorem quam fringilla eleifend semper vulputate aliquam. Eu dignissim cursus risus tempus. Feugiat morbi non vitae eget auctor. Et.
-            </p>
-          </div>
-          <div className="desc2">
-            <h1>02. Design</h1>
-            <p> Lorem ipsum dolor sit amet consectetur. Sed lorem quam fringilla eleifend semper vulputate aliquam. Eu dignissim cursus risus tempus. Feugiat morbi non vitae eget auctor. Et.</p>
-          </div>
-        
-        </motion.div>
       </div>
-    </div>
+
+      
+
+     
+       </div>
   );
 };
 
