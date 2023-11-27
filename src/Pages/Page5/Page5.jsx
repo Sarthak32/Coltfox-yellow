@@ -1,5 +1,5 @@
 import React, { useEffect,useRef } from 'react';
-import { motion, useAnimation, useDragControls } from 'framer-motion'; // Import Framer Motion
+import { motion, useAnimation } from 'framer-motion';
 import './Page5.css';
 import {gsap} from 'gsap';
 

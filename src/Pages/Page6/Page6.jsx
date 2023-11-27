@@ -1,12 +1,36 @@
 import React,{useRef,useState,useEffect } from 'react';
 import './Page6.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft,faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
+gsap.registerPlugin(ScrollTrigger);
 const Page6 = () => {
+    
+    useEffect(() => {
+        // Set up GSAP animation
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: '.page6-container',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: 1, // Adjust the scrub value as needed
+          },
+        });
+    
+        // Define animations for each page6-cont element
+        document.querySelectorAll('.page6-cont').forEach((el, index) => {
+          tl.fromTo(
+            el,
+            { x: '80%' }, // Initial position (right side)
+            { x: '0%', duration: 1, opacity: 1 }, // Final position (left side)
+            `-=${index === 0 ? 0 : 0.5}` // Adjust the delay for each element
+          );
+        });
+      }, []);
     return(
-    <div className="page6-container">
-        <div className="page6-cont">
+    <div className="page6-container" >
+        <div className="page6-cont"  >
             <div className="protitle">1. <div className="innert">Requirements</div></div>
             <div className="prodes">Our initial meeting or call will identify your objectives and decipher exactly how we can help. This involves some deep digging into your company, your competitors, your audience and, most importantly, what you want to achieve.</div>
 
