@@ -1,0 +1,111 @@
+.page8-container{
+    background-color: #D9D3D3;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    padding-left: 60px;
+}
+.whattheysay-btn{
+    margin-top: 40px;
+    width: 160px;
+    height: 38px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    padding: 0 18px 0 18px;
+    box-shadow: 0 2px 4px #00000040; 
+  }
+  .page8-title{
+    color: rgba(223, 35, 35, 1);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 150px;
+  }
+  .page8-des{
+    margin-top: 30px;
+    width: 1050px;
+    color: #1F1F21;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: left;
+  }
+  .page8-scroller1 {
+    display: flex;
+    margin-left: 600px;
+    max-width: 750px;
+    margin-top: 30px;
+    overflow: hidden;    
+  }
+  
+  .scroll1-grp1{
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    white-space: nowrap;
+    animation: scrollleft 10s linear infinite;
+  }
+  
+  @keyframes scrollleft {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+  .page8-scroller2 {
+    max-width: 750px;
+    display: flex;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+  .elem1 {
+    margin-left: 15px;
+    width: 251px;
+    height: 110px;
+    background-color: #DF2323;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .elem2 {
+    margin-left: 15px;
+    width: 251px;
+    height: 110px;
+    background-color: #DF2323;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .scroll2-grp1{
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    white-space: nowrap;
+    animation: scrollleft 10s linear infinite;
+    animation-direction: reverse;
+    animation-delay: -2s;
+  }

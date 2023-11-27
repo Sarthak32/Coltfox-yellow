@@ -20,6 +20,7 @@ const Page3 = () => {
           <div className="movable1">Our tenacious team of proven digital marketing experts and business growth pros push the boundaries of what is possible. GIANT harnesses the power of data analytics to understand customer behaviours and preferences.</div>
 
         </div>
+        <div className="line-design" ><img src='./line-design.png'/></div>
 
         <div className="findmore-btn">Find out more<img src='./arr-w.png'/></div>
 

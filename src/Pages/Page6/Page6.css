@@ -1,0 +1,40 @@
+.page6-container{
+    background-color: #F2F2F2;
+    min-height: 140vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+  }
+.page6-cont{
+    margin-top: 30px;
+    width: 1473px;
+    height: 265px;
+    border-radius: 200px;
+    border: solid 3px #DF2323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.protitle{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #012033;
+    font-size: 96px;
+    line-height: 130px;
+    gap: 30px;
+}
+.prodes{
+    margin-left: 70px;
+    width: 529px;
+    height: 140px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #012033;
+    font-size: 20px;
+    line-height: 25px;
+}

@@ -1,0 +1,80 @@
+.page9-container{
+    background-color: #D9D3D3;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    padding-left: 60px;
+}
+.page9-design1{
+    margin-top: 30px;
+} 
+
+  .page9-cont{
+    margin-top: 30px;
+    display: flex;
+    align-items: start;
+  }
+  .page9-right {
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .page9-title {
+    width:556px;
+    color:#DF2323B2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .page9-subtitle {
+    width:442px;
+    color:#1F1F21;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 43px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .page9-des {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .comp-name {
+    width:356px;
+    color:#1F1F21;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 43px;
+    margin-bottom: 10px;
+  }
+  .sign{
+    text-align: left;
+    color:#FE7272;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 66.77px;
+    line-height: 70px;
+  }
+  .comp-review {
+    width:760px;
+    color:#1F1F21;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    text-align: left;
+  } 

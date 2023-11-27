@@ -6,6 +6,7 @@
   align-items: center;
   text-align: center;
   padding: 20px;
+  overflow: hidden;
 }
 
 .section-heading {
@@ -13,40 +14,43 @@
   font-family: 'Poppins', sans-serif;
   font-size: 90px;
   height: 192px;
+  width:4000px;
   background-color: #FE7272;
   color: #1F1F21;
   font-weight: 700;
-  line-height: 192px; /* Set line-height equal to height for vertical centering */
+  line-height: 192px; 
   border-radius: 100px;
-  padding: 0 20px; /* Add padding for better visual appeal */
-  display: inline-block; /* Allow for width to fit content */
+  padding: 0 20px; 
+  display: inline-block; 
   margin-bottom: 20px;
-  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  white-space: nowrap; 
   overflow: hidden;
+  animation: section-heading 10s infinite linear
 }
 
-/* Animation for scrolling effect */
-.section-heading::before {
-  content: attr(data-text); /* Set the content attribute to the actual text */
-  animation: scrolling 10s linear infinite; /* Adjust the duration as needed */
-  display: inline-block;
-}
 
-@keyframes scrolling {
+
+@keyframes section-heading  {
   0% {
-    transform: translateY(0);
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(20%);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateX(-20%);
   }
 }
 
-/* Add styles for the Page3 right section */
+.section-heading:hover {
+  animation: section-heading 10s infinite linear;
+}
+
 .page3-right {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  margin-top: 50px;
+  margin-left: 800px;
 }
 
 .aboutus {
@@ -67,17 +71,24 @@
 
 .stable-des {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  color: #555;
+  font-size: 20px;
+  color: #012033;
   margin-bottom: 20px;
-  max-width: 600px;
-  text-align: center;
+  max-width: 580px;
+  line-height: 36px;
+  text-align: left;
 }
 
 .movable-des {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: #012033;
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 600px;
+  text-align: left;
 }
 
 .movable1 {
@@ -86,10 +97,10 @@
   color: #444;
   margin-bottom: 15px;
   max-width: 600px;
-  text-align: center;
 }
 
 .findmore-btn {
+  margin-top: 30px;
   display: flex;
   align-items: center;
   font-family: 'Poppins', sans-serif;
@@ -115,28 +126,4 @@
   background-color: #FF5757;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .page3-right {
-    padding: 10px;
-  }
-
-  .section-heading {
-    font-size: 60px;
-    height: 150px;
-  }
-
-  .aboutus {
-    font-size: 20px;
-  }
-
-  .movable1 {
-    font-size: 16px;
-  }
-
-  .findmore-btn {
-    font-size: 14px;
-    padding: 8px 15px;
-  }
-}
 

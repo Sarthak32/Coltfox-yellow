@@ -21,20 +21,45 @@ const Page2 = () => {
           </div>
         </div>
         <div className="comp-cards">
+          <div className="comp-card-grp">
           <div className="comp-c1">
           <img src="hudbil-logo.png" alt="" />
           <p>HUDBIL delivers B2B engaging designing and development with latest technology tools to empower business and drive success, at speed and scale. </p>
-          <div className="learnmore">Learn more<FontAwesomeIcon icon={faArrowRight} style={{ color: "#000000", fontSize: "2rem" }} /></div>
+          <button className="learnmore">Learn more<FontAwesomeIcon icon={faArrowRight} style={{ color: "#000000", fontSize: "1.5rem" }} /></button>
+          <div className="comp-line-design" ><img src='./line-design.png'/></div>
           </div>
           <div className="comp-c2">
           <img src="kalacode-logo.png" alt="" />
           <p>KALACODE delivers proprietary 3D workflows and are responsible for the world’s firsts in AR, including the world’s largest deployment of WebAR.</p>
-          <div className="learnmore">Learn more<FontAwesomeIcon icon={faArrowRight} style={{ color: "#000000", fontSize: "2rem" }} /></div>
+          <button className="learnmore">Learn more<FontAwesomeIcon icon={faArrowRight} style={{ color: "#000000", fontSize: "1.5rem" }} /></button>
+          <div className="comp-line-design" ><img src='./line-design.png'/></div>
           </div>
           <div className="comp-c3">
           <img src="maus-logo.png" alt="" />
           <p>MAUS is a ‘Gen-Z’ Product that allows users to use their mobile phones as an exclusive mouse without wires and other connections. A user journey touch point.</p>
-          <div className="learnmore">Learn more<FontAwesomeIcon icon={faArrowRight} style={{ color: "#000000", fontSize: "2rem" }} /></div>
+          <button className="learnmore">Learn more<FontAwesomeIcon icon={faArrowRight} style={{ color: "#000000", fontSize: "1.5rem" }} /></button>
+          <div className="comp-line-design" ><img src='./line-design.png'/></div>
+          </div>
+          </div>
+          <div className="comp-card-grp">
+          <div className="comp-c1">
+          <img src="hudbil-logo.png" alt="" />
+          <p>HUDBIL delivers B2B engaging designing and development with latest technology tools to empower business and drive success, at speed and scale. </p>
+          <button className="learnmore">Learn more<FontAwesomeIcon icon={faArrowRight} style={{ color: "#000000", fontSize: "1.5rem" }} /></button>
+          <div className="comp-line-design" ><img src='./line-design.png'/></div>
+          </div>
+          <div className="comp-c2">
+          <img src="kalacode-logo.png" alt="" />
+          <p>KALACODE delivers proprietary 3D workflows and are responsible for the world’s firsts in AR, including the world’s largest deployment of WebAR.</p>
+          <button className="learnmore">Learn more<FontAwesomeIcon icon={faArrowRight} style={{ color: "#000000", fontSize: "1.5rem" }} /></button>
+          <div className="comp-line-design" ><img src='./line-design.png'/></div>
+          </div>
+          <div className="comp-c3">
+          <img src="maus-logo.png" alt="" />
+          <p>MAUS is a ‘Gen-Z’ Product that allows users to use their mobile phones as an exclusive mouse without wires and other connections. A user journey touch point.</p>
+          <button className="learnmore">Learn more<FontAwesomeIcon icon={faArrowRight} style={{ color: "#000000", fontSize: "1.5rem" }} /></button>
+          <div className="comp-line-design" ><img src='./line-design.png'/></div>
+          </div>
           </div>
         </div>
       
