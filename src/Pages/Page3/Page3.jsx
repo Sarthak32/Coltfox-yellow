@@ -1,14 +1,45 @@
-import React ,{useRef,useState,useEffect }from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import './Page3.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight,faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { motion, useAnimation,useScroll } from 'framer-motion';
+import gsap from 'gsap';
 
 const Page3 = () => {
-  
+  const movableRef = useRef(null);
+  const [contentIndex, setContentIndex] = useState(0);
 
+  const contents = [
+    "Our strength lies in our commitment to data-driven performance solutions designed to increase lead generation, customer acquisition, and audience engagement.",
+    "Marketing isn’t a one-off activity but a continuous process. We act as an extension to your organization, connecting the dots between ideas, strategy, and technology to deliver long-term, sustainable solutions."
+  ];
 
+  useEffect(() => {
+    const animateContent = () => {
+      gsap.to(movableRef.current, {
+        opacity: 0,
+        duration: 1,
+        onComplete: () => {
+          // Change content
+          movableRef.current.textContent = contents[contentIndex];
 
+          // Increment contentIndex or reset to 0 if it reaches the end
+          setContentIndex((prevIndex) =>
+            prevIndex === contents.length - 1 ? 0 : prevIndex + 1
+          );
+
+          // Animate back to full opacity
+          gsap.to(movableRef.current, {
+            opacity: 1,
+            duration: 1
+          });
+        }
+      });
+    };
+
+    // Set interval to change content every 5 seconds
+    const interval = setInterval(animateContent, 5000);
+
+    // Clear interval on component unmount
+    return () => clearInterval(interval);
+  }, [contentIndex]);
 
   return (
     <div className='page3-container'>
@@ -17,20 +48,14 @@ const Page3 = () => {
         <div className="aboutus">About Us</div>
         <div className="stable-des">Coltfox is not your typical digital marketing agency. We’re a strategic marketing firm that partners with clients to move their business forward. We’re bold. We’re curious. We’re transparent.</div>
         <div className="movable-des">
-          <div className="movable1">Our tenacious team of proven digital marketing experts and business growth pros push the boundaries of what is possible. GIANT harnesses the power of data analytics to understand customer behaviours and preferences.</div>
-
+          <div className="movable" ref={movableRef}>
+            {contents[contentIndex]}
+          </div>
         </div>
-        <div className="line-design" ><img src='./line-design.png'/></div>
-
-        <div className="findmore-btn">Find out more<img src='./arr-w.png'/></div>
-
-
+        <div className="line-design" ><img src='./line-design.png' alt="Line Design" /></div>
+        <div className="findmore-btn">Find out more<img src='./arr-w.png' alt="Arrow" /></div>
       </div>
-
-      
-
-     
-       </div>
+    </div>
   );
 };
 

@@ -1,7 +1,6 @@
 import React,{useEffect,useState} from "react";
-import "./global.css";
 import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/footer";
+import Footer from "./components/footer/Footer";
 import Cursor from "./components/stickCursor/cursor";
 
 import gsap from 'gsap';

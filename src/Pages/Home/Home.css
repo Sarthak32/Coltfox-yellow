@@ -42,7 +42,7 @@
   line-height: 180px;
   left: 196px;
 }
-.talk{
+.talk-btn{
   position: absolute;
   top: 85%;
   left: 75%;
@@ -59,4 +59,7 @@
   font-size: 30px;
   padding: 0 18px 0 18px;
   gap: 8px;
+}
+.talk-btn :hover{
+  background-color: #FE7272;
 }

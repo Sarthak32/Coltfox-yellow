@@ -73,9 +73,9 @@ const Home = () => {
         <div className='head3'>by marketing</div>
       </div>
 
-      <div className='talk'>
+      <button className='talk-btn'>
         Let's talk <img src='./arr-b.png' alt='Arrow' />
-      </div>
+      </button>
     </div>
   );
 };
