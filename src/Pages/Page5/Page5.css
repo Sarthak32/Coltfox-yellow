@@ -1,19 +1,21 @@
 .page5-container{
   background-color: #F2F2F2;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   padding: 20px;
   overflow: hidden;
+  padding-bottom: 50px;
 }
-.seeall{
+.seeall-btn{
+    margin-top: 10px;
     margin-left:1240px;
     display: flex;
     align-items: center;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
+    color: #000000;
     background-color: #FE7272;
     height: 56px;
     width: 250px;
@@ -25,17 +27,21 @@
     padding: 30px 30px;
     gap: 10px;
 }
+.seeall-btn:hover {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px #00000040;
+}
 .page5-cont{
     position: relative;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 220px;
     background-image: url("./cmgimg.jpg");
-    height: 1080px;
+    height: 750px;
     width: 1250px;
     background-size: cover;
 }
 .page5-title{
-    margin-left: 100px;
+    margin-left: 300px;
     margin-top: 150px;
     color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
@@ -45,7 +51,7 @@
     opacity: 0;
 }
 .page5-des{
-    margin-left: 100px;
+    margin-left: 300px;
     margin-top: 70px;
     color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
@@ -54,15 +60,15 @@
     line-height: 36px;
     opacity: 0;
 }
-.viewproj{
-    margin-top: 640px;
+.viewproj-btn{
+    margin-top: 360px;
     margin-left: 980px;
     display: flex;
     align-items: center;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
+    color: #000000;
     background-color: #FE7272;
     height: 56px;
     width: 230px;
@@ -74,8 +80,12 @@
     padding: 30px 30px;
     gap: 10px;
 }
+.viewproj-btn:hover {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px #00000040;
+}
 .page5-box{
-    margin-top: 450px;
+    margin-top: 250px;
     position: absolute;
     background-color: #FE7272;
     width: 490px;
@@ -99,7 +109,11 @@
     padding: 0 18px 0 18px;
     box-shadow: 0 2px 4px #00000040; 
   }
-  .box-title{
+  .whatwedid-btn:hover{
+    background-color: #FE7272;
+    box-shadow: 0 2px 4px #00000040;
+  }
+  .page5-container .open-brand {
     margin-top: 20px;
     display: flex;
     color: #012033;
@@ -108,7 +122,7 @@
     font-size: 40px;
     line-height: 36px;
     gap: 20px;
-}
+  }
 .box-des{
     margin-top: 20px;
     width: 419px;
@@ -136,7 +150,7 @@
     box-shadow: inset 0 4px 4px 0 rgba(223, 35, 35, 0.25);
 }
 .box-cont{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .box-brand{
     margin-top: 20px;

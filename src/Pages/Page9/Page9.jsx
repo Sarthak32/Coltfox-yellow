@@ -5,7 +5,6 @@ import './Page9.css';
 const Page9 = () => {
     return(
         <div className="page9-container">
-        <div className="page9-design1" ><img src='./line-design.png'/></div>
         <div className="page9-cont">
         <div className="page9-right">
             <div className="page9-title">Its all about our clients. </div>

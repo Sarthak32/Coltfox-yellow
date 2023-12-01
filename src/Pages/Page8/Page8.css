@@ -1,5 +1,6 @@
 .page8-container{
-    background-color: #D9D3D3;
+    background:url("./greypaper.jpeg");
+    background-size: cover;
     min-height: 70vh;
     display: flex;
     flex-direction: column;
@@ -24,6 +25,9 @@
     font-size: 16px;
     padding: 0 18px 0 18px;
     box-shadow: 0 2px 4px #00000040; 
+  }
+  .whattheysay-btn:hover{
+    background-color: #FE7272;
   }
   .page8-title{
     color: rgba(223, 35, 35, 1);

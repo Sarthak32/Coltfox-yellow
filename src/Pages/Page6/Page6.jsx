@@ -30,7 +30,10 @@ const Page6 = () => {
       }, []);
     return(
     <div className="page6-container" >
+      <button className='howdowe-btn'>How We Do It</button>
+      <div className="page6-title">Process & Approach</div>
         <div className="page6-cont"  >
+          
             <div className="protitle">1. <div className="innert">Requirements</div></div>
             <div className="prodes">Our initial meeting or call will identify your objectives and decipher exactly how we can help. This involves some deep digging into your company, your competitors, your audience and, most importantly, what you want to achieve.</div>
 
@@ -50,7 +53,10 @@ const Page6 = () => {
             <div className="prodes">Here we refine and optimise the project or campaign to maximise ROI and highlight key successes to carry into future projects. We cycle through a series of continuous improvement sprints to maximise and achieve optimum performance.</div>
 
         </div>
-        
+        <div className="page6-endcont">
+          <p>For over a <div className='endcont-style'>decade</div>, we’ve been delivering ‘Marketing  Experience’ that will amaze
+you</p>
+        </div>
     </div>
     )
 };

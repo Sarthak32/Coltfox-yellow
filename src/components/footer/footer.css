@@ -1,3 +1,163 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .bg-footer {
+    background-color: #FE7272;
+  }
+  
+  .py-20-footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .footheading-footer {
+    font-size: 7rem;
+    font-weight: 900;
+    text-align: center;
+    color: #012033;
+  }
+  
+  .footheading-footer h1 {
+    display: inline;
+  }
+  
+  .text-7xl-footer {
+    font-size: 5rem;
+  }
+  
+  .text-center-footer {
+    text-align: center;
+  }
+  
+  .text-color-footer {
+    color: #012033;
+  }
+  
+  .font-black-footer {
+    font-weight: 900;
+  }
+  
+  .mt-10-footer {
+    margin-top: 2.5rem;
+  }
+  
+  .text-3xl-footer {
+    font-size: 1.875rem;
+  }
+  
+  .font-semibold-footer {
+    font-weight: 600;
+  }
+  
+  .leading-10-footer {
+    line-height: 2.5rem;
+  }
+  
+  .flex-footer {
+    display: flex;
+  }
+  
+  .px-20-footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  
+  .gap-20-footer {
+    gap: 5rem;
+  }
+  
+  .justify-center-footer {
+    justify-content: center;
+  }
+  
+  .items-center-footer {
+    align-items: center;
+  }
+  
+  .gap-5-footer {
+    gap: 1.25rem;
+  }
+  
+  .text-4xl-footer {
+    font-size: 2.5rem;
+  }
+  
+  .h-20-footer {
+    height: 5rem;
+  }
+  
+  .w-max-footer {
+    width: max-content;
+  }
+  
+  .rounded-full-footer {
+    border-radius: 9999px;
+  }
+  
+  .p-3-footer {
+    padding: 0.75rem;
+  }
+  
+  .px-5-footer {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  
+  .border-footer {
+    border-width: 1px;
+  }
+  
+  .border-white-footer {
+    border-color: #fff;
+  }
+  
+  .border-radius-footer {
+    border-radius: 0.375rem;
+  }
+  
+  .border-fe7272-footer {
+    border-color: #FE7272;
+  }
+  
+  .h-[2px]-footer {
+    height: 2px;
+  }
+  
+  .bg-white-footer {
+    background-color: #fff;
+  }
+  
+  .w-[90%]-footer {
+    width: 90%;
+  }
+  
+  .mx-auto-footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .h-[2px]-footer {
+    height: 2px;
+  }
+  
+  .my-6-footer {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .text-3xl-footer {
+    font-size: 1.875rem;
+  }
+  
+  /* Additional Styles */
+  /* Add any extra styles here if needed */
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    /* Add responsive styles here */
+  }
+  

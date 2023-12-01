@@ -53,7 +53,7 @@ const Page3 = () => {
           </div>
         </div>
         <div className="line-design" ><img src='./line-design.png' alt="Line Design" /></div>
-        <div className="findmore-btn">Find out more<img src='./arr-w.png' alt="Arrow" /></div>
+        <div className="findmore-btn">Find out more<img src='./arr-b.png' className='page3-arr' alt="Arrow" /></div>
       </div>
     </div>
   );

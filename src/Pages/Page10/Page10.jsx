@@ -15,12 +15,24 @@ const Page10 = () => {
             <div className="page10-cont">
                 <div className="page10-blog1">
                     <img src='./blog1.png' className='blogimg'/>
+                    <div className='expand-blog'>
+                        <div className="expand-content">
+                            <img src="./page10-insideimg.png" alt="" />
+                            <img  className ="blog-arr" src='./page10-arrw.png' alt='' />
+                        </div>
+                    </div>
                     <div className="blog-des"><div className="para">First - party data in marketing - what you need to know ?</div>
                     <div className="gotoblog-btn"><img src='./crossarrimg.png'/></div></div>
                     <div className="blog-btn">DATA AND ANALYTICS</div>
                 </div>
                 <div className="page10-blog2">
                     <img src='./blog2.png' className='blogimg'/>
+                    <div className='expand-blog'>
+                        <div className="expand-content">
+                            <img src="./page10-insideimg.png" alt="" />
+                            <img className ="blog-arr" src='./page10-arrw.png' alt='' />
+                        </div>
+                    </div>
                     <div className="blog-des"><div className="para">The power of performance creative in modern marketing</div>
                     <div className="gotoblog-btn"><img src='./crossarrimg.png'/></div></div>
                     <div className="blog-btn" style={{width:"310px"}}>STRAREGY AND CREATIVE</div>

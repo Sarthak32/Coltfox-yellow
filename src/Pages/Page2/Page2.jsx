@@ -36,15 +36,17 @@ const Page2 = () => {
 
     return () => clearInterval(contentChangeInterval);
   }, [currentIndex, content]);
+  
 
   return (
     <div className="page2-container">
       <div className="page2-rect">
         <div className="page2-right">
           <div className="weare">Who We Are</div>
-          <div className="title bg-black">Our Brands</div>
-          <div className="description">
-            HUDBIL Private Limited is a 360 Degree Exclusive Co-creators. Passionate innovators. We’re your Design, Development and Marketing partners, working at the cutting edge of digital product development. We have the technical, marketing expertise and domain experience to help you push boundaries, regardless of your industry.
+          <div className="page2-title">Our Brands</div>
+          <div className="page2-description">
+          Hudbil Private Limited is an reliable company, with multiple brands under the one umbrella.
+We are here to enable you with top-notch digital solutions & products through a proven cost-saving model. This allows you to scale, optimize, expand, and enhance your business. with an individual approach. This is our game style.
           </div>
         </div>
         <div className="comp-cards">

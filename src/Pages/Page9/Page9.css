@@ -1,5 +1,6 @@
 .page9-container{
-    background-color: #D9D3D3;
+  background:url("./greypaper.jpeg");
+  background-size: cover;
     min-height: 70vh;
     display: flex;
     flex-direction: column;

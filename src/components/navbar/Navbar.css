@@ -16,7 +16,7 @@
     justify-content: center;
   }
   .logo.extended{
-    width: 260px;
+    width: 290px;
     height: 100px;
     border-radius: 50px;
     align-items: center;
@@ -28,8 +28,8 @@
   }
   .logo-img.extended{
     margin-top: -15px;
-    width: 130px; /* Adjust the logo size as needed */
-    height: 64px;
+    width: 200px; /* Adjust the logo size as needed */
+    height: 60px;
     background: transparent;
   }
   .menu-icon {
@@ -47,3 +47,32 @@
     height: 36px;
     cursor: pointer;
   }
+  @media screen and (max-width: 480px) {
+    .navbar {
+      width: 100%;
+      padding: 32px 26px  0 26px;
+    }
+    .logo{
+      left: 26px;
+      height: 70px;
+      width: 70px;
+    }
+    .logo.extended{
+      width: 150px;
+      height: 70px;
+      border-radius: 45px;
+    }
+    .logo-img {
+      width: 30px; 
+      height: 45px;
+    }
+    .logo-img.extended{
+      width: 100px; 
+      height: 45px;
+    }
+    .menu-icon{
+      height: 70px;
+      width: 70px;
+    } 
+  }
+  

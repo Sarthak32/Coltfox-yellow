@@ -2,6 +2,7 @@
   background-color: #F2F2F2;
   min-height: 90vh;
   display: flex;
+  overflow: hidden;
 }
 
 .page2-rect {
@@ -12,9 +13,23 @@
   width: 95%;
   border-radius: 20px;
   box-shadow: 0 2px 4px #00000040;
+  transition: transform 0.3s ease-in-out;
 }
-
-.title {
+.page2-rect:hover .weare,
+.page2-rect:hover .page2-title,
+.page2-rect:hover .page2-description,
+.page2-rect:hover .comp-cards,
+.page2-rect:hover .comp-card-grp,
+.page2-rect:hover .comp-c img,
+.page2-rect:hover .comp-c p,
+.page2-rect:hover .comp-c .learnmore,
+.page2-rect:hover .comp-c .comp-line-design,
+.page2-rect:hover .comp-c  {
+  transform: scale(1.01); /* Adjust the scale factor as needed */
+  transition: transform 0.3s ease-in-out; /* Added transition property */
+}
+.page2-title {
+  padding-top: 20px;
   font-family: 'Poppins', sans-serif;
   color: #DF2323;
   font-weight: 700;
@@ -28,7 +43,7 @@
   margin-left: 65px;
 }
 
-.description {
+.page2-description {
   font-family: 'Poppins', sans-serif;
   color: #000000;
   font-weight: 400;
@@ -52,7 +67,9 @@
   gap: 8px;
   box-shadow: 0 2px 4px #00000040;
 }
-
+.weare:hover{
+  background-color: #FE7272;
+}
 .comp-cards {
   width: 650px;
   margin-top: 150px;
@@ -128,4 +145,46 @@
 
 .comp-c:nth-child(3) {
   margin-top: 150px;
+}
+@media screen and (max-width: 480px) {
+  .page2-rect{
+    margin-left: 8px;
+    min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  }
+  .page2-title{
+    font-size: 55px;
+  }
+  .page2-right{
+      margin-left: 30px;
+  }
+  .page2-description{
+    width: 300px;
+    font-size: 18px;
+  }
+  .comp-cards{
+    width: 300px;
+    margin: 0 auto;
+  }
+  .comp-card-grp{
+    justify-content: center;
+  }
+  .comp-c{
+    padding: 30px;
+    height: 400px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .comp-c img{
+    margin-top: 10px;
+  }
+  .comp-c p{
+    width: 250px;
+    font-size: 12px;
+  }
+  .comp-c .learnmore{
+    margin-top: 10px;
+  }
+
 }

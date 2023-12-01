@@ -41,7 +41,7 @@ const Home = () => {
         cursorSpan.classList.remove("typing");
         textArrayIndex++;
         if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-        setTimeout(type, typingDelay + 1100);
+        setTimeout(type, typingDelay + 900);
       }
     }
 
@@ -52,7 +52,7 @@ const Home = () => {
 
   useEffect(() => {
     // Toggle the animation after a delay
-    const delay = 500; // Delay in milliseconds before starting the animation
+    const delay = 200; // Delay in milliseconds before starting the animation
 
     const animationTimeout = setTimeout(() => {
       setIsAnimating(true);

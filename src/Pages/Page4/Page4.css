@@ -1,8 +1,8 @@
 .page4-container {
-    background-color: #FE7272;
+    background:url("./pinkpaper.jpeg");
+    background-size: cover;
     min-height: 90vh;
     display: flex;
-    flex-direction: column;
     align-items:start;
     text-align: center;
     padding: 20px;
@@ -10,6 +10,10 @@
     padding-left: 60px;
   }
 
+.page4-left{
+    display: flex;
+    flex-direction: column;
+  }
 .whatwedo-btn{
   margin-top: 40px;
   width: 136px;
@@ -26,7 +30,12 @@
   padding: 0 18px 0 18px;
   box-shadow: 0 2px 4px #00000040; 
 }
+.whatwedo-btn:hover {
+  background-color: #FE7272 ;
+  box-shadow: 0 2px 4px #00000040;
+}
 .page4-title{
+  text-align: left;
   margin-top: 40px;
   color: #FFFFFF;
   font-family: 'Poppins', sans-serif;
@@ -96,4 +105,68 @@
   gap: 30px;
   box-shadow: inset 0 4px 4px 0 rgba(223, 35, 35, 0.25);
 }
+.expl:hover {
+  background-color: #FE7272 ;
+  box-shadow: 0 2px 4px #00000040;
+}
+.page4-right{
+  margin-left: 50px;
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
 
+}
+.innertitl img{
+  margin-left: 15px;
+}
+.changing-desof{
+  width: 561px;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (max-width: 480px){
+  .page4-container{
+    flex-direction: column;
+  }
+  .page4-left{
+    width: 300px;
+  }
+  .page4-title{
+    margin-top: 20px;
+    font-size: 50px;
+  }
+  .page4-des{
+    margin-top: 10px;
+    width: 300px;
+  }
+  .page4-line{
+    width: 300px;
+  }
+  .srno{
+    width: 45px;
+    height: 30px;
+  }
+  .innertitle{
+    margin-left: 20px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .page4-container .page4-arr{
+    margin-left: 80px;
+  }
+  .page4-right{
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+  .innertitl img{
+    margin-left: 10px;
+  }
+  .changing-desof{
+    width: 300px;
+  }
+}
