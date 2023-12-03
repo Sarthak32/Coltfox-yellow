@@ -146,6 +146,7 @@ const content = [
   };
   //page5
   const containerRef = useRef();
+  const [selectedBox, setSelectedBox] = useState('acma');
 
   useEffect(() => {
     const container = containerRef.current;
@@ -158,7 +159,6 @@ const content = [
         {
           opacity: 1,
           y: 50, // Initial position, adjust as needed
-          
         },
         {
           opacity: 1,
@@ -169,15 +169,11 @@ const content = [
       );
     };
 
-
-
-
     const handleMouseOut = (e) => {
-      // Check if the mouse is leaving the title or description
       if (!e.relatedTarget || !e.relatedTarget.classList.contains('page5-title') && !e.relatedTarget.classList.contains('page5-des')) {
         gsap.to([title, description], {
           opacity: 0,
-          y: 50, // Move back down, adjust as needed
+          y: 50,
           duration: 0.8,
           ease: 'power3.out',
           clearProps: 'all',
@@ -193,10 +189,31 @@ const content = [
       container.removeEventListener('mouseout', handleMouseOut);
     };
   }, []);
-  const [selectedBox, setSelectedBox] = useState('cmg');
 
   const handleBoxClick = (boxId) => {
     setSelectedBox(selectedBox === boxId ? null : boxId);
+
+    // Update background image based on selectedBox
+    const page5Cont = containerRef.current;
+
+    switch (boxId) {
+      case 'acma':
+        page5Cont.style.backgroundImage = 'url("./acmaimg.png")';
+        break;
+      case 'toolstation':
+        page5Cont.style.backgroundImage = 'url("./toolstationimg.png")';
+        break;
+      case 'solo':
+        page5Cont.style.backgroundImage = 'url("./soloimg.png")';
+        break;
+      case 'cedevita':
+        page5Cont.style.backgroundImage = 'url("./cedevitaimg.png")';
+        break;
+      default:
+        // Set a default image or handle accordingly
+        page5Cont.style.backgroundImage = 'none';
+        break;
+    }
   };
 //page6
 useEffect(() => {
@@ -286,7 +303,7 @@ We are here to enable you with top-notch digital solutions & products through a 
       Learn more<FontAwesomeIcon icon={faArrowRight} style={{ color: "#000000", fontSize: "1.5rem" }} />
     </button>
     <div className="comp-line-design">
-      <img src='./line-design.png' alt="line design" />
+      <img src='./line-design-yellow.png' alt="line design" />
     </div>
   </div>
 ))}
@@ -305,7 +322,7 @@ We are here to enable you with top-notch digital solutions & products through a 
             {contents[contentIndex]}
           </div>
         </div>
-        <div className="line-design" ><img src='./line-design.png' alt="Line Design" /></div>
+        <div className="line-design" ><img src='./line-design-yellow.png' alt="Line Design" /></div>
         <div className="findmore-btn">Find out more<img src='./arr-b.png' className='page3-arr' alt="Arrow" /></div>
       </div>
     </div>
@@ -358,26 +375,34 @@ We are here to enable you with top-notch digital solutions & products through a 
           <div className="titldes">Reach your marketing goals with a content strategy that helps you find your strongest stories, reach the right people, measure your success, and do it all as efficiently as possible. Supporting the growth of your business.
           </div>
         )}
-
+          
         </div>
+        <div className="line-design" ><img src='./line-design-red.png' alt="Line Design" /></div>
     </div>
     </div>
     {/*page5*/}
     <div className="page5-container">
-        <div className='seeall-btn'>See all project <img src='./arr-b.png'/></div>
-        <div className="page5-cont" ref={containerRef}>
-        <div className="page5-title">ACMA.</div>
-        <div className="page5-des">Automotive Component Manufacturers Association of India</div>
-        <div className='viewproj-btn'>View Project<img src='./arr-b.png'/></div>
+      <div className='seeall-btn'>See all project <img src='./arr-b.png'/></div>
+      <div className="page5-cont" ref={containerRef}>
+        <div className="page5-title">{selectedBox ? selectedBox.toUpperCase() + '.' : ''}</div>
+        <div className="page5-des">
+          {selectedBox &&
+            (selectedBox === 'acma' ? 'Automotive Component Manufacturers Association of India' :
+             selectedBox === 'toolstation' ? 'Tool station launches latest catalog with deals and products' :
+             selectedBox === 'solo' ? 'Solo Expenses – App promotion marketing campaign' :
+             selectedBox === 'cedevita' ? 'Creating an intelligent and seamless experience for an NGO.' : '')
+          }
         </div>
-          <div className="page5-box">
+        <div className='viewproj-btn'>View Project<img src='./arr-b.png'/></div>
+      </div>
+      <div className="page5-box">
         <div className="whatwedid-btn">What We Did</div>
         <div className="box-cont">
-          <div className={`box-brand ${selectedBox === 'cmg' ? 'open-brand' : ''}`}
-           onClick={() => handleBoxClick('cmg')}>
+          <div className={`box-brand ${selectedBox === 'acma' ? 'open-brand' : ''}`}
+            onClick={() => handleBoxClick('acma')}>
             ACMA.<img src='./crossarr-w.png'/>
           </div>
-          {selectedBox === 'cmg' && (
+          {selectedBox === 'acma' && (
             <>
               <div className="box-des">Working closely with the ACMA team, Associations has transformed the event b2b and b2c search strategy and performance by restructuring search campaigns, rolling out into new territories, and combining their event and Google intelligent bidding to grow digital overall.</div>
               <div className="boxmid-s">
@@ -388,11 +413,11 @@ We are here to enable you with top-notch digital solutions & products through a 
             </>
           )}
 
-          <div className={`box-brand ${selectedBox === 'oryx' ? 'open-brand' : ''}`}
-           onClick={() => handleBoxClick('oryx')}>
+          <div className={`box-brand ${selectedBox === 'toolstation' ? 'open-brand' : ''}`}
+            onClick={() => handleBoxClick('toolstation')}>
             Toolstation.<img src='./crossarr-w.png'/>
           </div>
-          {selectedBox === 'oryx' && (
+          {selectedBox === 'toolstation' && (
             <>
               <div className="box-des">The catalog will be available in all 550+ Tool station stores across the UK. To celebrate the launch, Coltfox did help them with hard-to-reach local construction Landing strategy in London and across the capital, making it easier attract deals.</div>
               <div className="boxmid-s">
@@ -403,11 +428,11 @@ We are here to enable you with top-notch digital solutions & products through a 
             </>
           )}
 
-          <div className={`box-brand ${selectedBox === 'alpsko' ? 'open-brand' : ''}`}
-           onClick={() => handleBoxClick('alpsko')}>
+          <div className={`box-brand ${selectedBox === 'solo' ? 'open-brand' : ''}`}
+            onClick={() => handleBoxClick('solo')}>
             Solo.<img src='./crossarr-w.png'/>
           </div>
-          {selectedBox === 'alpsko' && (
+          {selectedBox === 'solo' && (
             <>
               <div className="box-des">Lorem ipsum dolor sit amet. Qui cumque deleniti sed maxime debitis aut neque cupiditate At voluptas autem qui officiis exercitationem? Vel doloribus sint et porro aliquid ut nihil quaerat aut enim nihil ea voluptatem sunt quo quod odit.</div>
               <div className="boxmid-s">
@@ -417,11 +442,11 @@ We are here to enable you with top-notch digital solutions & products through a 
               </div>
             </>
           )}
-          <div className={`box-brand ${selectedBox === 'Cedevita' ? 'open-brand' : ''}`}
-           onClick={() => handleBoxClick('Cedevita')}>
-          Cedevita.<img src='./crossarr-w.png'/>
+          <div className={`box-brand ${selectedBox === 'cedevita' ? 'open-brand' : ''}`}
+            onClick={() => handleBoxClick('cedevita')}>
+            Cedevita.<img src='./crossarr-w.png'/>
           </div>
-          {selectedBox === 'Cedevita' && (
+          {selectedBox === 'cedevita' && (
             <>
               <div className="box-des">Lorem ipsum dolor sit amet. Qui cumque deleniti sed maxime debitis aut neque cupiditate At voluptas autem qui officiis exercitationem? Vel doloribus sint et porro aliquid ut nihil quaerat aut enim nihil ea voluptatem sunt quo quod odit.</div>
               <div className="boxmid-s">
@@ -431,13 +456,9 @@ We are here to enable you with top-notch digital solutions & products through a 
               </div>
             </>
           )}
-
-          {/* ... other box-brands ... */}
         </div>
       </div>
-
-          {/* ... other box-brands ... */}
-      </div>
+    </div>
       {/*page6*/}
       <div className="page6-container" >
       <button className='howdowe-btn'>How We Do It</button>
@@ -466,6 +487,7 @@ We are here to enable you with top-notch digital solutions & products through a 
         <div className="page6-endcont">
           <p>For over a <div className='endcont-style'>decade</div>, we’ve been delivering ‘Marketing  Experience’ that will amaze
 you</p>
+            <div className="end-date">Since 2016</div>
         </div>
     </div>
     {/*page7*/}
@@ -505,28 +527,40 @@ you</p>
          
       <div className='page8-scroller1' >
          <div className="scroll1-grp1">
-         <div className='elem1'><img src='./Airbnblogo.png' alt='Airbnb logo' /></div>
-         <div className='elem1'><img src='./uberlogo.png' alt='Uber logo' /></div>
-         <div className='elem1'><img src='./microsoftlogo.png' alt='Microsoft logo' /></div>
+         <div className='elem1'><img src='./kf_logo.png' alt='kf_logo logo' /></div>
+         <div className='elem1'><img src='./junk_logo.png' alt='junk_logo logo' /></div>
+         <div className='elem1'><img src='./sendl_logo.png' alt='sendl_logo logo' /></div>
+         <div className='elem1'><img src='./sbee_logo.png' alt='sbee_logo logo' /></div>
+         <div className='elem1'><img src='./cre_logo.png' alt='cre_logo logo' /></div>
+         <div className='elem1'><img src='./mfr_logo.png' alt='mfr_logo logo' /></div>
+         <div className='elem1'><img src='./usaid_logo.png' alt='usaid_logo logo' /></div>
          </div>
          <div className="scroll1-grp1">
-         <div className='elem1'><img src='./Airbnblogo.png' alt='Airbnb logo' /></div>
-         <div className='elem1'><img src='./uberlogo.png' alt='Uber logo' /></div>
-         <div className='elem1'><img src='./microsoftlogo.png' alt='Microsoft logo' /></div>
+         <div className='elem1'><img src='./kf_logo.png' alt='kf_logo logo' /></div>
+         <div className='elem1'><img src='./junk_logo.png' alt='junk_logo logo' /></div>
+         <div className='elem1'><img src='./sendl_logo.png' alt='sendl_logo logo' /></div>
+         <div className='elem1'><img src='./sbee_logo.png' alt='sbee_logo logo' /></div>
+         <div className='elem1'><img src='./cre_logo.png' alt='cre_logo logo' /></div>
+         <div className='elem1'><img src='./mfr_logo.png' alt='mfr_logo logo' /></div>
+         <div className='elem1'><img src='./usaid_logo.png' alt='usaid_logo logo' /></div>
          </div>
                  
       </div>
       
       <div className='page8-scroller2'>
          <div className="scroll2-grp1">
-         <div className='elem2'><img src='./Airbnblogo.png' alt='Airbnb logo' /></div>
-         <div className='elem2'><img src='./uberlogo.png' alt='Uber logo' /></div>
-         <div className='elem2'><img src='./microsoftlogo.png' alt='Microsoft logo' /></div>
+         <div className='elem2'><img src='./acma-logo.png' alt='acma logo' /></div>
+         <div className='elem2'><img src='./nuta_logo.png' alt='acma logo' /></div>
+         <div className='elem2'><img src='./scoro_logo.png' alt='scoro_logo' /></div>
+         <div className='elem2'><img src='./cht_logo.png' alt='cht_logo' /></div>
+
          </div>
          <div className="scroll2-grp1">
-         <div className='elem2'><img src='./Airbnblogo.png' alt='Airbnb logo' /></div>
-         <div className='elem2'><img src='./uberlogo.png' alt='Uber logo' /></div>
-         <div className='elem2'><img src='./microsoftlogo.png' alt='Microsoft logo' /></div>
+         <div className='elem2'><img src='./acma-logo.png' alt='acma logo' /></div>
+         <div className='elem2'><img src='./nuta_logo.png' alt='nuta_logo' /></div>
+         <div className='elem2'><img src='./scoro_logo.png' alt='scoro_logo' /></div>
+         <div className='elem2'><img src='./cht_logo.png' alt='cht_logo' /></div>
+       
          </div>
       </div>
     </div>
@@ -538,9 +572,9 @@ you</p>
             <div className="page9-subtitle">(and what they say!)</div>
         </div>
         <div className="page9-des">
-            <div className="comp-name">Company name</div>
+            <div className="comp-name">Roatan Real Estate</div>
             <div className="sign">“</div>
-            <div className="comp-review">Le persone sempre al centro. Sono la fonte principale di ogni grande progetto. Collaborano, crescono, si uniscono all’unisono per creare un unico e potente movimento: la nostra onda.</div>
+            <div className="comp-review">Coltfox is a much needed blessing and exceeded our expectations in every way. They are honest, straightforward, they take care of all your needs quickly, they are reliable, you can count on them and most of all, they do everything they say they will do. - Marci Wiersma </div>
             <div className="page9-design1" ><img src='./line-design.png'/></div>
         </div>
         </div>

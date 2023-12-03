@@ -1,7 +1,7 @@
 .cursor{
     width: 20px;
     height: 20px;
-    background-color: #FE7272;
+    background-color: #FCAB64;
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
@@ -10,7 +10,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 2px solid #FE7272 ;
+    border: 2px solid #FCAB64 ;
 }
 .cursor-oncont{
     

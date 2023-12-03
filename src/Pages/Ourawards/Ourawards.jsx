@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Ourawards.css"
 
 const Ourawards = () => {
   return (
@@ -37,7 +38,7 @@ const Ourawards = () => {
         </div>
       </div>
       <div className="Ourawards-endcont">
-        <div className="awards-round"/>
+        <div className="cir"><img src='./awards-cir.png'/></div>
         <div className="closeloop">Close The Loop</div>
         <div className="closeloop-sub">We start with your audience</div>
         <div className="closeloop-des">Lorem ipsum dolor sit amet. Sed consequuntur minus sed numquam dolorum qui magnam eligendi ut laudantium iure vel ullam expedita vel dolorem odio ut quaerat sapiente. Ea voluptatibus autem eos autem consequatur ut galisum dolorem ut debitis animi quo iste voluptatum cum cupiditate cupiditate. </div>
