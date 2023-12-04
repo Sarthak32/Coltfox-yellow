@@ -1,0 +1,273 @@
+.Ourservicesinside{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.Ourservicesinside-title{
+    margin-top: 40px;
+    margin-left: 200px;
+    width: 1080px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 132px;
+    letter-spacing: -0.800000011920929px;
+    text-align: center;
+    color: #DF2323;
+}
+.Ourservicesinside-page2{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.perf-mar-btn{
+    margin-top: 100px;
+    width: 310px;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FCAB64;
+    color: #F2F2F2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    text-align: center;
+    border-radius: 40px;
+    
+}
+.perf-mar-btn:hover{
+    color: #121212;
+    background-color: #F2F2F2;
+    box-shadow: 0 2px 4px #00000040;
+}
+.Ourservicesinside-page2-title{
+    margin-top: 100px;
+    width: 650px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 81px;
+    letter-spacing: -1.0399999618530273px;
+    text-align: center;
+}
+.Ourservicesinside-page2-des{
+    margin-top: 50px;
+    width: 680px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.3199999928474426px;
+    text-align: center;
+}
+.Ourservicesinside-page2-img{
+    margin-top: 50px;
+
+}
+.Ourservicesinside-page2-img img{
+    width: 1352px;
+    height: 700px;
+}
+.Ourservicesinside-page3{
+    margin-top: 50px;
+    background:url("./greypaper.jpeg");
+    background-size: cover;
+    min-height: 90vh;
+    padding-left: 118px;
+}
+.Ourservicesinside-page3-cont{
+    display: flex;
+}
+.Ourservicesinside-page3-left{
+    margin-top: 100px;
+}
+.our-app-btn{
+    background-color: #FCAB64;
+    width: 200px;
+    height: 35px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #F2F2F2;
+    
+}
+.our-app-btn:hover{
+    color: #121212;
+    background-color: #F2F2F2;
+    box-shadow: 0 2px 4px #00000040;
+}
+.Ourservicesinside-page3-title{
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 144px;
+    letter-spacing: -1.0399999618530273px;
+    text-align: left;
+    color: #F2F2F2;
+    
+}
+.Ourservicesinside-page3-sub{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    color: #F2F2F2;
+    gap: 20px;
+}
+.Ourservicesinside-page3-srno{
+    display: flex;
+    width: 55px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid #DF2323;
+    color: #DF2323;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+.Ourservicesinside-page3-line-des{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 2px;
+    width: 750px;
+    background-color: #FCAB64;
+}
+.Ourservicesinside-page3-des{
+    width: 750px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: -0.3199999928474426px;
+    text-align: left;
+}
+.Ourservicesinside-page3-right{
+    margin-top: 60px;
+    margin-left: 100px;
+}
+.Ourservicesinside-page3-end{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: -0.3199999928474426px;
+    text-align: left;
+    gap: 10px;
+    
+}
+.Ourservicesinside-page4{
+    padding: 60px;
+    display: flex;
+}
+.supp-sol-btn{
+    margin-left: 50px;
+    background-color: #FCAB64;
+    width: 280px;
+    height: 35px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #F2F2F2;
+}
+.supp-sol-btn:hover{
+    color: #121212;
+    background-color: #F2F2F2;
+    box-shadow: 0 2px 4px #00000040;
+}
+.Ourservicesinside-page4-r{
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 1000px;
+}
+.Ourservicesinside-page4-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 57px;
+    letter-spacing: -1.0399999618530273px;
+    text-align: left;
+    color: #121212;
+}
+.Ourservicesinside-page4-sub{
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.3199999928474426px;
+    text-align: left;
+    color: #012033;
+}
+.Ourservicesinside-page4-main{
+    
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+.Ourservicesinside-page4-main-cont{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.Ourservicesinside-page4-cont-t{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    
+}
+.Ourservicesinside-page4-main-cont img{
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+}
+.ourser-blackline{
+    height: 2px;
+    width: 100%;
+    background-color: #012033;
+    margin-top: 20px;
+}

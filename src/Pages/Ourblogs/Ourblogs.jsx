@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Ourblogs.css"
 
 const Ourblogs = () => {
   return (
@@ -101,7 +102,15 @@ const Ourblogs = () => {
           </div>
           </div>
         </div>
-        <div className="blackline-endof"/>
+        <div className="Ourblogs-cont-endcont">
+          <div className="blogs-f">{"<<"}First</div>
+          <div className="blogs-p">{"<"}Prev</div>
+          <div className="blogs-1">1</div>
+          <div className="blogs-2">2</div>
+          <div className="blogs-3">3</div>
+          <div className="blogs-nx">Next{">"}</div>
+          <div className="blogs-l">Last{">>"}</div>
+        </div>
       </div>
     </div>
   )

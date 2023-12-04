@@ -1,0 +1,111 @@
+.Ourworkmain{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.Ourworkmain-title{
+    margin-top: 200px;
+    margin-left: 130px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 128px;
+    font-weight: 600;
+    line-height: 153px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #DF2323;
+}
+.Ourworkmain-cont{
+    padding-top: 60px;
+    display: flex;
+    gap: 30px;
+}
+.Ourworkmain-left{
+    display: flex;
+    flex-direction: column;
+    padding-left: 130px;
+}
+.our-work-label{
+    display: flex;
+    width: 220px;
+    height: 60px;
+    background-color: #FCAB64;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 30px 30px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    text-align: left;
+    
+}
+
+.our-work-types{
+    padding-left: 30px;
+}
+.our-work-type{
+    margin-top: 20px;
+    width: 220px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #012033;
+
+}
+.Ourworkmain-right{
+
+}
+.Ourworkmain-right-cont{
+    display: flex;
+    margin-bottom: 30px;
+    gap: 40px;
+}
+.Ourworkmain-right-cont img{
+    width: 580px;
+    height: 430px;
+}
+.Ourworkmain-right-cont-dis{
+    width: 440px;
+}
+.Ourworkmain-right-cont-t{
+    width: 420px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #012033;
+}
+.Ourworkmain-right-cont-des{
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight:400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #012033;
+}
+.view-case-btn{
+    margin-top: 70px;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    
+    text-align: left;
+    gap: 20px;
+    color: #DF2323;
+}
+.view-case-btn img{
+    width: 40px;
+    height: 18px;
+}
